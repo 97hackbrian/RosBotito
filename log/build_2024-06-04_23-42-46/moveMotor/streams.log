@@ -1,0 +1,26 @@
+[1.180s] Invoking command in '/home/ros2/Desktop/rosbostito/build/moveMotor': PYTHONPATH=/home/ros2/Desktop/rosbostito/build/moveMotor/prefix_override:/home/ros2/Desktop/rosbostito/install/moveMotor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ros2/Desktop/rosbostito/build/moveMotor/build --no-deps symlink_data
+[1.520s] running develop
+[1.520s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.520s]   warnings.warn(
+[1.723s] running egg_info
+[1.723s] creating moveMotor.egg-info
+[1.724s] writing moveMotor.egg-info/PKG-INFO
+[1.724s] writing dependency_links to moveMotor.egg-info/dependency_links.txt
+[1.724s] writing entry points to moveMotor.egg-info/entry_points.txt
+[1.724s] writing requirements to moveMotor.egg-info/requires.txt
+[1.724s] writing top-level names to moveMotor.egg-info/top_level.txt
+[1.725s] writing manifest file 'moveMotor.egg-info/SOURCES.txt'
+[1.727s] reading manifest file 'moveMotor.egg-info/SOURCES.txt'
+[1.727s] writing manifest file 'moveMotor.egg-info/SOURCES.txt'
+[1.730s] running build_ext
+[1.730s] Creating /home/ros2/Desktop/rosbostito/install/moveMotor/lib/python3.10/site-packages/moveMotor.egg-link (link to .)
+[1.731s] Installing Teleop script to /home/ros2/Desktop/rosbostito/install/moveMotor/lib/moveMotor
+[1.732s] 
+[1.732s] Installed /home/ros2/Desktop/rosbostito/build/moveMotor
+[1.732s] running symlink_data
+[1.732s] creating /home/ros2/Desktop/rosbostito/install/moveMotor/share/ament_index
+[1.732s] creating /home/ros2/Desktop/rosbostito/install/moveMotor/share/ament_index/resource_index
+[1.733s] creating /home/ros2/Desktop/rosbostito/install/moveMotor/share/ament_index/resource_index/packages
+[1.733s] symbolically linking /home/ros2/Desktop/rosbostito/build/moveMotor/resource/moveMotor -> /home/ros2/Desktop/rosbostito/install/moveMotor/share/ament_index/resource_index/packages
+[1.733s] symbolically linking /home/ros2/Desktop/rosbostito/build/moveMotor/package.xml -> /home/ros2/Desktop/rosbostito/install/moveMotor/share/moveMotor
+[1.776s] Invoked command in '/home/ros2/Desktop/rosbostito/build/moveMotor' returned '0': PYTHONPATH=/home/ros2/Desktop/rosbostito/build/moveMotor/prefix_override:/home/ros2/Desktop/rosbostito/install/moveMotor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ros2/Desktop/rosbostito/build/moveMotor/build --no-deps symlink_data

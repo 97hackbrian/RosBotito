@@ -1,0 +1,55 @@
+[0.289s] Invoking command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/Desktop/rosbostito/install/tf_transform:/opt/ros/humble /usr/bin/cmake --build /home/ros2/Desktop/rosbostito/build/navigation_tb3 -- -j8 -l8
+[0.431s] [  0%] Built target ament_cmake_python_symlink_navigation_tb3
+[0.459s] [100%] Built target pub_occupancy_grid
+[0.712s] running egg_info
+[0.713s] writing navigation_tb3.egg-info/PKG-INFO
+[0.714s] writing dependency_links to navigation_tb3.egg-info/dependency_links.txt
+[0.714s] writing top-level names to navigation_tb3.egg-info/top_level.txt
+[0.718s] reading manifest file 'navigation_tb3.egg-info/SOURCES.txt'
+[0.719s] writing manifest file 'navigation_tb3.egg-info/SOURCES.txt'
+[0.749s] [100%] Built target ament_cmake_python_build_navigation_tb3_egg
+[0.761s] Invoked command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/Desktop/rosbostito/install/tf_transform:/opt/ros/humble /usr/bin/cmake --build /home/ros2/Desktop/rosbostito/build/navigation_tb3 -- -j8 -l8
+[0.803s] Invoking command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/Desktop/rosbostito/install/tf_transform:/opt/ros/humble /usr/bin/cmake --install /home/ros2/Desktop/rosbostito/build/navigation_tb3
+[0.811s] -- Install configuration: ""
+[0.813s] -- Execute custom install script
+[0.814s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/lib/navigation_tb3/pub_occupancy_grid
+[0.815s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/launch/mapping.launch.py
+[0.816s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/launch/navigation.launch.py
+[0.816s] -- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/map2.pgm
+[0.826s] -- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/map2.yaml
+[0.836s] -- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapCasa3.pgm
+[0.846s] -- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapCasa3.yaml
+[0.857s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapping.rviz
+[0.858s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/navigation.rviz
+[0.858s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/rosbostito.lua
+[0.858s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_map.pgm
+[0.858s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_map.yaml
+[0.859s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_nav2_params.yaml
+[0.859s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/turtlebot3_lds_2d.lua
+[0.859s] -- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/visualize.rviz
+[0.869s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/pythonpath.sh
+[0.870s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/pythonpath.dsv
+[0.870s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/PKG-INFO
+[0.870s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.870s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.871s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/top_level.txt
+[0.871s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3/__init__.py
+[0.872s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/lib/navigation_tb3/single_goal_nav.py
+[0.872s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/lib/navigation_tb3/multi_waypoints.py
+[0.872s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/ament_index/resource_index/package_run_dependencies/navigation_tb3
+[0.873s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/ament_index/resource_index/parent_prefix_path/navigation_tb3
+[0.873s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.sh
+[0.873s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.dsv
+[0.873s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/path.sh
+[0.873s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/path.dsv
+[0.874s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.bash
+[0.874s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.sh
+[0.874s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.zsh
+[0.874s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.dsv
+[0.874s] -- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/package.dsv
+[0.887s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/ament_index/resource_index/packages/navigation_tb3
+[0.888s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/cmake/navigation_tb3Config.cmake
+[0.888s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/cmake/navigation_tb3Config-version.cmake
+[0.888s] -- Up-to-date symlink: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/package.xml
+[0.927s] Listing '/home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3'...
+[0.935s] Invoked command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros2/Desktop/rosbostito/install/tf_transform:/opt/ros/humble /usr/bin/cmake --install /home/ros2/Desktop/rosbostito/build/navigation_tb3

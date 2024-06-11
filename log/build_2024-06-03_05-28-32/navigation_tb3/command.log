@@ -1,0 +1,6 @@
+Invoking command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/Desktop/rosbostito/src/navigation_tb3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2/Desktop/rosbostito/install/navigation_tb3
+Invoked command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/Desktop/rosbostito/src/navigation_tb3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros2/Desktop/rosbostito/install/navigation_tb3
+Invoking command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/Desktop/rosbostito/build/navigation_tb3 -- -j8 -l8
+Invoked command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/Desktop/rosbostito/build/navigation_tb3 -- -j8 -l8
+Invoking command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/Desktop/rosbostito/build/navigation_tb3
+Invoked command in '/home/ros2/Desktop/rosbostito/build/navigation_tb3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/Desktop/rosbostito/build/navigation_tb3

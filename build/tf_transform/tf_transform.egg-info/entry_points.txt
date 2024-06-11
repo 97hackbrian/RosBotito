@@ -1,0 +1,5 @@
+[console_scripts]
+OdomRead = tf_transform.odom_tf:main
+TF2Read = tf_transform.listerner_and_transform:main
+testTransform = tf_transform.only_transform:main
+

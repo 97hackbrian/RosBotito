@@ -1,0 +1,190 @@
+[0.000000] (-) TimerEvent: {}
+[0.000204] (navigation_tb3) JobQueued: {'identifier': 'navigation_tb3', 'dependencies': OrderedDict()}
+[0.000774] (tf_transform) JobQueued: {'identifier': 'tf_transform', 'dependencies': OrderedDict()}
+[0.001163] (navigation_tb3) JobStarted: {'identifier': 'navigation_tb3'}
+[0.006817] (tf_transform) JobStarted: {'identifier': 'tf_transform'}
+[0.013999] (navigation_tb3) JobProgress: {'identifier': 'navigation_tb3', 'progress': 'cmake'}
+[0.014494] (navigation_tb3) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2/Desktop/rosbostito/src/navigation_tb3', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ros2/Desktop/rosbostito/install/navigation_tb3'], 'cwd': '/home/ros2/Desktop/rosbostito/build/navigation_tb3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'es_BO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_BO.UTF-8'), ('SYSTEMD_EXEC_PID', '25188'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Y720:@/tmp/.ICE-unix/1601,unix/Y720:/tmp/.ICE-unix/1601'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_BO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac85c0b9_74cf_456f_84cf_6dc907965e28'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_BO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OA9QO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.176'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '2'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_BO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_BO.UTF-8'), ('LC_IDENTIFICATION', 'es_BO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/Desktop/rosbostito/build/navigation_tb3'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_BO.UTF-8'), ('LC_PAPER', 'es_BO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073999] (navigation_tb3) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099709] (-) TimerEvent: {}
+[0.138160] (navigation_tb3) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.146835] (navigation_tb3) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199827] (-) TimerEvent: {}
+[0.223356] (navigation_tb3) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.231226] (navigation_tb3) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.231526] (navigation_tb3) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.232382] (navigation_tb3) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.237190] (navigation_tb3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299946] (-) TimerEvent: {}
+[0.329668] (navigation_tb3) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.340900] (navigation_tb3) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.341205] (navigation_tb3) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.341696] (navigation_tb3) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.344637] (navigation_tb3) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400040] (-) TimerEvent: {}
+[0.500415] (-) TimerEvent: {}
+[0.507903] (navigation_tb3) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.570466] (navigation_tb3) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.600542] (-) TimerEvent: {}
+[0.608991] (navigation_tb3) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.657128] (navigation_tb3) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.662723] (navigation_tb3) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.671870] (navigation_tb3) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.686481] (navigation_tb3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700642] (-) TimerEvent: {}
+[0.707452] (navigation_tb3) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.783471] (navigation_tb3) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.786773] (navigation_tb3) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800810] (-) TimerEvent: {}
+[0.816069] (tf_transform) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ros2/Desktop/rosbostito/build/tf_transform/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ros2/Desktop/rosbostito/build/tf_transform', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ros2', 'LC_TIME': 'es_BO.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ros2', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_BO.UTF-8', 'SYSTEMD_EXEC_PID': '25188', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ros2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ros2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Y720:@/tmp/.ICE-unix/1601,unix/Y720:/tmp/.ICE-unix/1601', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_BO.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ac85c0b9_74cf_456f_84cf_6dc907965e28', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_BO.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.OA9QO2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.176', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '2', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_BO.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_BO.UTF-8', 'LC_IDENTIFICATION': 'es_BO.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ros2/Desktop/rosbostito/build/tf_transform', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ros2/Desktop/rosbostito/build/tf_transform/prefix_override:/home/ros2/Desktop/rosbostito/install/tf_transform/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_BO.UTF-8', 'LC_PAPER': 'es_BO.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.900911] (-) TimerEvent: {}
+[0.907437] (navigation_tb3) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.941395] (navigation_tb3) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.995242] (navigation_tb3) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.001004] (-) TimerEvent: {}
+[1.005841] (navigation_tb3) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.087000] (navigation_tb3) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.087567] (navigation_tb3) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.101109] (-) TimerEvent: {}
+[1.112921] (tf_transform) StdoutLine: {'line': b'running develop\n'}
+[1.113269] (tf_transform) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.113430] (tf_transform) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.166012] (navigation_tb3) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.167271] (navigation_tb3) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.201208] (-) TimerEvent: {}
+[1.296052] (tf_transform) StdoutLine: {'line': b'running egg_info\n'}
+[1.296441] (tf_transform) StdoutLine: {'line': b'writing tf_transform.egg-info/PKG-INFO\n'}
+[1.296789] (tf_transform) StdoutLine: {'line': b'writing dependency_links to tf_transform.egg-info/dependency_links.txt\n'}
+[1.297017] (tf_transform) StdoutLine: {'line': b'writing entry points to tf_transform.egg-info/entry_points.txt\n'}
+[1.297212] (tf_transform) StdoutLine: {'line': b'writing requirements to tf_transform.egg-info/requires.txt\n'}
+[1.297397] (tf_transform) StdoutLine: {'line': b'writing top-level names to tf_transform.egg-info/top_level.txt\n'}
+[1.299845] (tf_transform) StdoutLine: {'line': b"reading manifest file 'tf_transform.egg-info/SOURCES.txt'\n"}
+[1.301158] (tf_transform) StdoutLine: {'line': b"writing manifest file 'tf_transform.egg-info/SOURCES.txt'\n"}
+[1.301387] (-) TimerEvent: {}
+[1.302664] (tf_transform) StdoutLine: {'line': b'running build_ext\n'}
+[1.302982] (tf_transform) StdoutLine: {'line': b'Creating /home/ros2/Desktop/rosbostito/install/tf_transform/lib/python3.10/site-packages/tf-transform.egg-link (link to .)\n'}
+[1.303932] (tf_transform) StdoutLine: {'line': b'Installing TF2Read script to /home/ros2/Desktop/rosbostito/install/tf_transform/lib/tf_transform\n'}
+[1.304167] (tf_transform) StdoutLine: {'line': b'Installing testTransform script to /home/ros2/Desktop/rosbostito/install/tf_transform/lib/tf_transform\n'}
+[1.304473] (tf_transform) StdoutLine: {'line': b'\n'}
+[1.304637] (tf_transform) StdoutLine: {'line': b'Installed /home/ros2/Desktop/rosbostito/build/tf_transform\n'}
+[1.304810] (tf_transform) StdoutLine: {'line': b'running symlink_data\n'}
+[1.340575] (tf_transform) CommandEnded: {'returncode': 0}
+[1.358066] (tf_transform) JobEnded: {'identifier': 'tf_transform', 'rc': 0}
+[1.373420] (navigation_tb3) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.401502] (-) TimerEvent: {}
+[1.501793] (-) TimerEvent: {}
+[1.547470] (navigation_tb3) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.601904] (-) TimerEvent: {}
+[1.702319] (-) TimerEvent: {}
+[1.715750] (navigation_tb3) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.727983] (navigation_tb3) StdoutLine: {'line': b'-- Generating done\n'}
+[1.730656] (navigation_tb3) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2/Desktop/rosbostito/build/navigation_tb3\n'}
+[1.741758] (navigation_tb3) CommandEnded: {'returncode': 0}
+[1.742667] (navigation_tb3) JobProgress: {'identifier': 'navigation_tb3', 'progress': 'build'}
+[1.744017] (navigation_tb3) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2/Desktop/rosbostito/build/navigation_tb3', '--', '-j8', '-l8'], 'cwd': '/home/ros2/Desktop/rosbostito/build/navigation_tb3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'es_BO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_BO.UTF-8'), ('SYSTEMD_EXEC_PID', '25188'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Y720:@/tmp/.ICE-unix/1601,unix/Y720:/tmp/.ICE-unix/1601'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_BO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac85c0b9_74cf_456f_84cf_6dc907965e28'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_BO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OA9QO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.176'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '2'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_BO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_BO.UTF-8'), ('LC_IDENTIFICATION', 'es_BO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/Desktop/rosbostito/build/navigation_tb3'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_BO.UTF-8'), ('LC_PAPER', 'es_BO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.798345] (navigation_tb3) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o\x1b[0m\n'}
+[1.802440] (-) TimerEvent: {}
+[1.808604] (navigation_tb3) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_symlink_navigation_tb3\n'}
+[1.902540] (-) TimerEvent: {}
+[2.002843] (-) TimerEvent: {}
+[2.082425] (navigation_tb3) StdoutLine: {'line': b'running egg_info\n'}
+[2.083258] (navigation_tb3) StdoutLine: {'line': b'creating navigation_tb3.egg-info\n'}
+[2.083490] (navigation_tb3) StdoutLine: {'line': b'writing navigation_tb3.egg-info/PKG-INFO\n'}
+[2.083671] (navigation_tb3) StdoutLine: {'line': b'writing dependency_links to navigation_tb3.egg-info/dependency_links.txt\n'}
+[2.083838] (navigation_tb3) StdoutLine: {'line': b'writing top-level names to navigation_tb3.egg-info/top_level.txt\n'}
+[2.084045] (navigation_tb3) StdoutLine: {'line': b"writing manifest file 'navigation_tb3.egg-info/SOURCES.txt'\n"}
+[2.086006] (navigation_tb3) StdoutLine: {'line': b"reading manifest file 'navigation_tb3.egg-info/SOURCES.txt'\n"}
+[2.086664] (navigation_tb3) StdoutLine: {'line': b"writing manifest file 'navigation_tb3.egg-info/SOURCES.txt'\n"}
+[2.102938] (-) TimerEvent: {}
+[2.115608] (navigation_tb3) StdoutLine: {'line': b'[ 50%] Built target ament_cmake_python_build_navigation_tb3_egg\n'}
+[2.203049] (-) TimerEvent: {}
+[2.303436] (-) TimerEvent: {}
+[2.403703] (-) TimerEvent: {}
+[2.504007] (-) TimerEvent: {}
+[2.604322] (-) TimerEvent: {}
+[2.704637] (-) TimerEvent: {}
+[2.804951] (-) TimerEvent: {}
+[2.905269] (-) TimerEvent: {}
+[3.005589] (-) TimerEvent: {}
+[3.105914] (-) TimerEvent: {}
+[3.206242] (-) TimerEvent: {}
+[3.306565] (-) TimerEvent: {}
+[3.406889] (-) TimerEvent: {}
+[3.507183] (-) TimerEvent: {}
+[3.607505] (-) TimerEvent: {}
+[3.707836] (-) TimerEvent: {}
+[3.808161] (-) TimerEvent: {}
+[3.908489] (-) TimerEvent: {}
+[4.008827] (-) TimerEvent: {}
+[4.109147] (-) TimerEvent: {}
+[4.209485] (-) TimerEvent: {}
+[4.309808] (-) TimerEvent: {}
+[4.410125] (-) TimerEvent: {}
+[4.510472] (-) TimerEvent: {}
+[4.610794] (-) TimerEvent: {}
+[4.711113] (-) TimerEvent: {}
+[4.811437] (-) TimerEvent: {}
+[4.911760] (-) TimerEvent: {}
+[5.012090] (-) TimerEvent: {}
+[5.112428] (-) TimerEvent: {}
+[5.212755] (-) TimerEvent: {}
+[5.313075] (-) TimerEvent: {}
+[5.413384] (-) TimerEvent: {}
+[5.513701] (-) TimerEvent: {}
+[5.614014] (-) TimerEvent: {}
+[5.714329] (-) TimerEvent: {}
+[5.814641] (-) TimerEvent: {}
+[5.914959] (-) TimerEvent: {}
+[6.015303] (-) TimerEvent: {}
+[6.031406] (navigation_tb3) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pub_occupancy_grid\x1b[0m\n'}
+[6.115421] (-) TimerEvent: {}
+[6.215738] (-) TimerEvent: {}
+[6.277023] (navigation_tb3) StdoutLine: {'line': b'[100%] Built target pub_occupancy_grid\n'}
+[6.288047] (navigation_tb3) CommandEnded: {'returncode': 0}
+[6.316084] (navigation_tb3) JobProgress: {'identifier': 'navigation_tb3', 'progress': 'install'}
+[6.316216] (-) TimerEvent: {}
+[6.325808] (navigation_tb3) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2/Desktop/rosbostito/build/navigation_tb3'], 'cwd': '/home/ros2/Desktop/rosbostito/build/navigation_tb3', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'es_BO.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_BO.UTF-8'), ('SYSTEMD_EXEC_PID', '25188'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Y720:@/tmp/.ICE-unix/1601,unix/Y720:/tmp/.ICE-unix/1601'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_BO.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac85c0b9_74cf_456f_84cf_6dc907965e28'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_BO.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OA9QO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.176'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '2'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_BO.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_BO.UTF-8'), ('LC_IDENTIFICATION', 'es_BO.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/Desktop/rosbostito/build/navigation_tb3'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_BO.UTF-8'), ('LC_PAPER', 'es_BO.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.333716] (navigation_tb3) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.334553] (navigation_tb3) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.335058] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/lib/navigation_tb3/pub_occupancy_grid\n'}
+[6.345125] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/launch/mapping.launch.py\n'}
+[6.354501] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/launch/navigation.launch.py\n'}
+[6.363787] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapping.rviz\n'}
+[6.372633] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/navigation.rviz\n'}
+[6.381458] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_map.pgm\n'}
+[6.390043] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_map.yaml\n'}
+[6.398468] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_nav2_params.yaml\n'}
+[6.407145] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/turtlebot3_lds_2d.lua\n'}
+[6.415732] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/pythonpath.sh\n'}
+[6.416294] (-) TimerEvent: {}
+[6.425224] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/pythonpath.dsv\n'}
+[6.435567] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.446174] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.457017] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.466929] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.477295] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3/__init__.py\n'}
+[6.486348] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/lib/navigation_tb3/single_goal_nav.py\n'}
+[6.495243] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/lib/navigation_tb3/multi_waypoints.py\n'}
+[6.504363] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/ament_index/resource_index/package_run_dependencies/navigation_tb3\n'}
+[6.513431] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/ament_index/resource_index/parent_prefix_path/navigation_tb3\n'}
+[6.516412] (-) TimerEvent: {}
+[6.522449] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.sh\n'}
+[6.531661] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.dsv\n'}
+[6.541719] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/path.sh\n'}
+[6.552770] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/environment/path.dsv\n'}
+[6.561949] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.bash\n'}
+[6.570925] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.sh\n'}
+[6.579706] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.zsh\n'}
+[6.588818] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/local_setup.dsv\n'}
+[6.597872] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/package.dsv\n'}
+[6.606968] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/ament_index/resource_index/packages/navigation_tb3\n'}
+[6.615781] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/cmake/navigation_tb3Config.cmake\n'}
+[6.616487] (-) TimerEvent: {}
+[6.624834] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/cmake/navigation_tb3Config-version.cmake\n'}
+[6.634097] (navigation_tb3) StdoutLine: {'line': b'-- Symlinking: /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/package.xml\n'}
+[6.673536] (navigation_tb3) StdoutLine: {'line': b"Listing '/home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3'...\n"}
+[6.673735] (navigation_tb3) StdoutLine: {'line': b"Compiling '/home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3/__init__.py'...\n"}
+[6.681216] (navigation_tb3) CommandEnded: {'returncode': 0}
+[6.716595] (-) TimerEvent: {}
+[6.724633] (navigation_tb3) JobEnded: {'identifier': 'navigation_tb3', 'rc': 0}
+[6.725371] (-) EventReactorShutdown: {}
