@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /RobotModel1
         - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
@@ -52,8 +53,8 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
-      Description File: ""
-      Description Source: Topic
+      Description File: /home/ros2/Desktop/rosbostito/src/navigation_tb3/urdf/rosbot.urdf
+      Description Source: File
       Description Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -66,7 +67,12 @@ Visualization Manager:
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
-        Link Tree Style: ""
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Mass Properties:
         Inertia: false
         Mass: false
@@ -257,11 +263,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 93.54224395751953
+      Scale: 190.69383239746094
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz_default_plugins)
-      X: -0.22020003199577332
-      Y: 1.3698819875717163
+      X: 0.01899350807070732
+      Y: 0.45723116397857666
     Saved: ~
 Window Geometry:
   Displays:

@@ -6,6 +6,7 @@
 /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapCasa3.pgm
 /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapCasa3.yaml
 /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mapping.rviz
+/home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/mappingV2.rviz
 /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/navigation.rviz
 /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/rosbostito.lua
 /home/ros2/Desktop/rosbostito/install/navigation_tb3/share/navigation_tb3/config/tb3_map.pgm
