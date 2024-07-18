@@ -52,7 +52,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 1
+    - Alpha: 0.5
       Class: rviz_default_plugins/RobotModel
       Collision Enabled: false
       Description File: /home/ros2/Desktop/rosbostito/src/navigation_tb3/urdf/rosbot.urdf
@@ -80,7 +80,7 @@ Visualization Manager:
         Mass: false
       Name: RobotModel
       TF Prefix: ""
-      Update Interval: 0
+      Update Interval: 0.0010000000474974513
       Value: true
       Visual Enabled: true
     - Alpha: 0.699999988079071
@@ -311,11 +311,11 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 75.9620590209961
+      Scale: 131.26971435546875
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz_default_plugins)
-      X: 1.2418051958084106
-      Y: -1.1438108682632446
+      X: 0.09391087293624878
+      Y: 0.15700463950634003
     Saved: ~
 Window Geometry:
   Displays:
