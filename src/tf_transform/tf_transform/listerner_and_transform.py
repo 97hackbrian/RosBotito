@@ -37,7 +37,7 @@ class TransformPublisher(Node):
     def publish_transform(self):
         transform = TransformStamped()
         transform.header.stamp = self.get_clock().now().to_msg()
-        transform.header.frame_id = "world"
+        transform.header.frame_id = "odom"
         transform.child_frame_id = "base_link"
         
         transform.transform.translation.x = self.current_vector.x
