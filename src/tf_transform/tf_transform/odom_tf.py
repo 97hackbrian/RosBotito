@@ -44,7 +44,7 @@ class OdomTransformer(Node):
         self.prev_time = None
         
         # Configurar temporizador para publicar datos a intervalos regulares
-        self.timer = self.create_timer(0.1, self.publish_odom)  # Publicar a 10 Hz
+        self.timer = self.create_timer(0.05, self.publish_odom)  # Publicar a 10 Hz
 
     def quaternion_callback(self, msg):
         self.quaternion = msg

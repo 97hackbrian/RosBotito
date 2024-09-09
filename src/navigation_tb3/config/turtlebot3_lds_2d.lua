@@ -19,28 +19,26 @@ options = {
   num_subdivisions_per_laser_scan = 1,  -- number of subdivisions for each laser scan
   num_point_clouds = 0,  -- number of cloud points
   lookup_transform_timeout_sec = 0.2,  -- timeout for finding transformations (seconds)  
-  submap_publish_period_sec = 0.3,  -- submap release cycle (seconds)
-  pose_publish_period_sec = 5e-3,  -- attitude release period (seconds)
-  trajectory_publish_period_sec = 30e-3,  -- trajectory release period (seconds)
-  rangefinder_sampling_ratio = 1.,  -- rangefinder sampling ratio
-  odometry_sampling_ratio = 1.,  -- odometer sampling rate
-  fixed_frame_pose_sampling_ratio = 1.,  -- fixed frame attitude sampling ratio  
-  imu_sampling_ratio = 1.,  -- IMU sampling ratio
-  landmarks_sampling_ratio = 1.,  -- landmarks sampling ratio
+  submap_publish_period_sec = 1.0,  -- Increased period for submap release (seconds)
+  pose_publish_period_sec = 0.1,  -- Increased period for pose release (seconds)
+  trajectory_publish_period_sec = 0.1,  -- Increased period for trajectory release (seconds)
+  rangefinder_sampling_ratio = 0.5,  -- Reduced rangefinder sampling ratio
+  odometry_sampling_ratio = 0.5,  -- Reduced odometry sampling ratio
+  fixed_frame_pose_sampling_ratio = 0.5,  -- Reduced fixed frame pose sampling ratio  
+  imu_sampling_ratio = 0.5,  -- Reduced IMU sampling ratio
+  landmarks_sampling_ratio = 0.5,  -- Reduced landmarks sampling ratio
 }
  
 MAP_BUILDER.use_trajectory_builder_2d = true  -- whether use 2D SLAM
-TRAJECTORY_BUILDER_2D.submaps.num_range_data = 10  -- 35Number of range data for submaps in the 2D track builder  
-TRAJECTORY_BUILDER_2D.min_range = 0.15  -- ignore anything smaller than the robot radius, limiting it to the minimum scan range of the lidar
-TRAJECTORY_BUILDER_2D.max_range = 7.5  -- the maximum scanning range of the lidar
-TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.  -- Restricted to maximum LiDAR scanning range  
-TRAJECTORY_BUILDER_2D.use_imu_data = false  -- whether use IMU data
+TRAJECTORY_BUILDER_2D.submaps.num_range_data = 35  -- Number of range data for submaps in the 2D track builder  
+TRAJECTORY_BUILDER_2D.min_range = 0.15  -- Ignore anything smaller than the robot radius, limiting it to the minimum scan range of the LiDAR
+TRAJECTORY_BUILDER_2D.max_range = 11.5  -- The maximum scanning range of the LiDAR
+TRAJECTORY_BUILDER_2D.missing_data_ray_length = 6.5  -- Restricted to maximum LiDAR scanning range  
+TRAJECTORY_BUILDER_2D.use_imu_data = false  -- Whether to use IMU data
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true  -- Whether to scan for matches using real-time loopback detection
 
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.5)  -- Modify 1.0 to 0.1, increased sensitivity to movement
-POSE_GRAPH.constraint_builder.min_score = 0.65  -- Modify 0.55 to 0.65, the minium score of Fast csm, can be optimized above this score 
-POSE_GRAPH.constraint_builder.global_localization_min_score = 0.7  -- Modify 0.6 as 0.7, Minimum global positioning score below which global positioning is considered currently inaccurate
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.01)  -- Increased sensitivity to movement
+POSE_GRAPH.constraint_builder.min_score = 0.65  -- Minimum score for Fast CSM
+POSE_GRAPH.constraint_builder.global_localization_min_score = 0.7  -- Minimum global positioning score below which global positioning is considered currently inaccurate
 
 return options
-
-
