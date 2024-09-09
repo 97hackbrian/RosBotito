@@ -1,1 +1,1 @@
-/home/ros2/Desktop/rosbostito/src/navigation_tb3/config/turtlebot3_lds_2d.lua
+/ros/src/navigation_tb3/config/turtlebot3_lds_2d.lua

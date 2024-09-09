@@ -1,1 +1,1 @@
-/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.sh
+/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.sh

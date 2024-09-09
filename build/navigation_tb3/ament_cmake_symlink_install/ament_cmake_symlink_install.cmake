@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ros2/Desktop/rosbostito/install/navigation_tb3/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/ros/install/navigation_tb3/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ros2/Desktop/rosbostito/install/navigation_tb3/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/ros/install/navigation_tb3/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/ros2/Desktop/rosbostito/install/navigation_tb3/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/ros/install/navigation_tb3/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/ros2/Desktop/rosbostito/install/navigation_tb3/${destination}")
+      set(destination "/ros/install/navigation_tb3/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,70 +311,70 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "pub_occupancy_grid" "DESTINATION" "lib/navigation_tb3")
-include("/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/ros/build/navigation_tb3/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch/" "DESTINATION" "share/navigation_tb3/launch")
-ament_cmake_symlink_install_directory("/home/ros2/Desktop/rosbostito/src/navigation_tb3" DIRECTORY "launch/" "DESTINATION" "share/navigation_tb3/launch")
+ament_cmake_symlink_install_directory("/ros/src/navigation_tb3" DIRECTORY "launch/" "DESTINATION" "share/navigation_tb3/launch")
 
 # install(DIRECTORY "config/" "DESTINATION" "share/navigation_tb3/config")
-ament_cmake_symlink_install_directory("/home/ros2/Desktop/rosbostito/src/navigation_tb3" DIRECTORY "config/" "DESTINATION" "share/navigation_tb3/config")
+ament_cmake_symlink_install_directory("/ros/src/navigation_tb3" DIRECTORY "config/" "DESTINATION" "share/navigation_tb3/config")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/navigation_tb3/environment")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/navigation_tb3/environment")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/navigation_tb3/environment")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/navigation_tb3/environment")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/navigation_tb3/environment")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/navigation_tb3/environment")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/navigation_tb3/environment")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/navigation_tb3/environment")
 
-# install(DIRECTORY "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_python/navigation_tb3/navigation_tb3.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/ros2/Desktop/rosbostito/src/navigation_tb3" DIRECTORY "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_python/navigation_tb3/navigation_tb3.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info")
+# install(DIRECTORY "/ros/build/navigation_tb3/ament_cmake_python/navigation_tb3/navigation_tb3.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/ros/src/navigation_tb3" DIRECTORY "/ros/build/navigation_tb3/ament_cmake_python/navigation_tb3/navigation_tb3.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3-0.0.0-py3.10.egg-info")
 
-# install(DIRECTORY "/home/ros2/Desktop/rosbostito/src/navigation_tb3/navigation_tb3/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/ros2/Desktop/rosbostito/src/navigation_tb3" DIRECTORY "/home/ros2/Desktop/rosbostito/src/navigation_tb3/navigation_tb3/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/ros/src/navigation_tb3/navigation_tb3/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/ros/src/navigation_tb3" DIRECTORY "/ros/src/navigation_tb3/navigation_tb3/" "DESTINATION" "local/lib/python3.10/dist-packages/navigation_tb3" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install(PROGRAMS "scripts/single_goal_nav.py" "DESTINATION" "lib/navigation_tb3")
-ament_cmake_symlink_install_programs("/home/ros2/Desktop/rosbostito/src/navigation_tb3" PROGRAMS "scripts/single_goal_nav.py" "DESTINATION" "lib/navigation_tb3")
+ament_cmake_symlink_install_programs("/ros/src/navigation_tb3" PROGRAMS "scripts/single_goal_nav.py" "DESTINATION" "lib/navigation_tb3")
 
 # install(PROGRAMS "scripts/multi_waypoints.py" "DESTINATION" "lib/navigation_tb3")
-ament_cmake_symlink_install_programs("/home/ros2/Desktop/rosbostito/src/navigation_tb3" PROGRAMS "scripts/multi_waypoints.py" "DESTINATION" "lib/navigation_tb3")
+ament_cmake_symlink_install_programs("/ros/src/navigation_tb3" PROGRAMS "scripts/multi_waypoints.py" "DESTINATION" "lib/navigation_tb3")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/navigation_tb3/environment")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/navigation_tb3/environment")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/navigation_tb3/environment")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/navigation_tb3/environment")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/navigation_tb3/environment")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/navigation_tb3/environment")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/navigation_tb3/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/navigation_tb3/environment")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/navigation_tb3/environment")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/navigation_tb3/environment")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/navigation_tb3/environment")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/navigation_tb3/environment")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/navigation_tb3/environment")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/navigation_tb3/environment")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/navigation_tb3")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/navigation_tb3")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/navigation_tb3")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/navigation_tb3")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/navigation_tb3")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/navigation_tb3")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/navigation_tb3")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/navigation_tb3")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/navigation_tb3")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/navigation_tb3")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/navigation_tb3")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/navigation_tb3")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/navigation_tb3")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/navigation_tb3")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/navigation_tb3")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/packages/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/packages/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/packages/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/packages/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_core/navigation_tb3Config.cmake" "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_core/navigation_tb3Config-version.cmake" "DESTINATION" "share/navigation_tb3/cmake")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_core/navigation_tb3Config.cmake" "/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_core/navigation_tb3Config-version.cmake" "DESTINATION" "share/navigation_tb3/cmake")
+# install(FILES "/ros/build/navigation_tb3/ament_cmake_core/navigation_tb3Config.cmake" "/ros/build/navigation_tb3/ament_cmake_core/navigation_tb3Config-version.cmake" "DESTINATION" "share/navigation_tb3/cmake")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_core/navigation_tb3Config.cmake" "/ros/build/navigation_tb3/ament_cmake_core/navigation_tb3Config-version.cmake" "DESTINATION" "share/navigation_tb3/cmake")
 
-# install(FILES "/home/ros2/Desktop/rosbostito/src/navigation_tb3/package.xml" "DESTINATION" "share/navigation_tb3")
-ament_cmake_symlink_install_files("/home/ros2/Desktop/rosbostito/src/navigation_tb3" FILES "/home/ros2/Desktop/rosbostito/src/navigation_tb3/package.xml" "DESTINATION" "share/navigation_tb3")
+# install(FILES "/ros/src/navigation_tb3/package.xml" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/src/navigation_tb3/package.xml" "DESTINATION" "share/navigation_tb3")

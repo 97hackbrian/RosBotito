@@ -7,11 +7,11 @@ options = {
   map_frame = "map",  -- map frame name 
   tracking_frame = "laser_frame",  -- tracking frame name
   published_frame = "base_link",  -- published frame name 
-  odom_frame = "odom",  -- name of the odometer frame
+  odom_frame = "odom_frame",  -- name of the odometer frame
   provide_odom_frame = true,  -- whether to provide the odometer frame
   publish_frame_projected_to_2d = false,  -- whether to publish 2d gesture  
   use_pose_extrapolator = false,
-  use_odometry = false,  -- whether use odometry
+  use_odometry = true,  -- whether use odometry
   use_nav_sat = false,  -- whether use the navigation satellite 
   use_landmarks = false,  -- whether use the landmark
   num_laser_scans = 1,  -- LiDAR number  
@@ -30,14 +30,14 @@ options = {
 }
  
 MAP_BUILDER.use_trajectory_builder_2d = true  -- whether use 2D SLAM
-TRAJECTORY_BUILDER_2D.submaps.num_range_data = 35  -- Number of range data for submaps in the 2D track builder  
-TRAJECTORY_BUILDER_2D.min_range = 0.1  -- ignore anything smaller than the robot radius, limiting it to the minimum scan range of the lidar
-TRAJECTORY_BUILDER_2D.max_range = 3.5  -- the maximum scanning range of the lidar
+TRAJECTORY_BUILDER_2D.submaps.num_range_data = 10  -- 35Number of range data for submaps in the 2D track builder  
+TRAJECTORY_BUILDER_2D.min_range = 0.15  -- ignore anything smaller than the robot radius, limiting it to the minimum scan range of the lidar
+TRAJECTORY_BUILDER_2D.max_range = 7.5  -- the maximum scanning range of the lidar
 TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.  -- Restricted to maximum LiDAR scanning range  
 TRAJECTORY_BUILDER_2D.use_imu_data = false  -- whether use IMU data
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true  -- Whether to scan for matches using real-time loopback detection
 
-TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.1)  -- Modify 1.0 to 0.1, increased sensitivity to movement
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(0.5)  -- Modify 1.0 to 0.1, increased sensitivity to movement
 POSE_GRAPH.constraint_builder.min_score = 0.65  -- Modify 0.55 to 0.65, the minium score of Fast csm, can be optimized above this score 
 POSE_GRAPH.constraint_builder.global_localization_min_score = 0.7  -- Modify 0.6 as 0.7, Minimum global positioning score below which global positioning is considered currently inaccurate
 

@@ -1,1 +1,1 @@
-/home/ros2/Desktop/rosbostito/src/navigation_tb3/config/rosbostito.lua
+/ros/src/navigation_tb3/config/rosbostito.lua

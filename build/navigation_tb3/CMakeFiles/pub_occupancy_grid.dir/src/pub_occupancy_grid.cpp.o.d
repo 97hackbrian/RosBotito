@@ -1,5 +1,5 @@
 CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o: \
- /home/ros2/Desktop/rosbostito/src/navigation_tb3/src/pub_occupancy_grid.cpp \
+ /ros/src/navigation_tb3/src/pub_occupancy_grid.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

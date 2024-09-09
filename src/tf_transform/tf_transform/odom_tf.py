@@ -1,13 +1,18 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Quaternion, Vector3, Twist, Point
 from nav_msgs.msg import Odometry
+from tf2_ros import TransformBroadcaster
+from tf2_ros import TransformStamped
 import math
 
 class OdomTransformer(Node):
     def __init__(self):
         super().__init__('odom_transformer')
+        
+        # Inicializar el broadcaster TF
+        self.tf_broadcaster = TransformBroadcaster(self)
         
         # Suscribirse a los tópicos quaternion_topic, velocity_topic y position_topic
         self.quaternion_subscription = self.create_subscription(
@@ -52,16 +57,14 @@ class OdomTransformer(Node):
     def position_callback(self, msg):
         self.position = msg
         self.get_logger().info(f'Received Position: x={msg.x}, y={msg.y}, z={msg.z}')
-
+    '''
     def rotate_quaternion_by_90_degrees(self, quaternion):
         # Cuaternión de rotación para una rotación de 90 grados alrededor del eje z
         rotation_quaternion = Quaternion()
         rotation_quaternion.x = 0.0
         rotation_quaternion.y = 0.0
-        rotation_quaternion.z = math.sin(math.radians(270)/ 2)
-        rotation_quaternion.w = math.cos(math.radians(270)/ 2)
-        #rotation_quaternion.z = math.sqrt(2) / 2
-        #rotation_quaternion.w = math.sqrt(2) / 2
+        rotation_quaternion.z = math.sin(math.radians(90) / 2)
+        rotation_quaternion.w = math.cos(math.radians(90) / 2)
         
         # Multiplicar el cuaternión actual por el cuaternión de rotación
         rotated_quaternion = Quaternion()
@@ -78,8 +81,7 @@ class OdomTransformer(Node):
         rotated_quaternion.w /= magnitude
         
         return rotated_quaternion
-
-
+    '''
     def publish_odom(self):
         if self.quaternion is not None and self.velocity is not None and self.position is not None:
             current_time = self.get_clock().now()  # Mover la asignación de current_time aquí
@@ -89,7 +91,7 @@ class OdomTransformer(Node):
                 diff_quaternion = self.calculate_difference(self.quaternion, self.prev_quaternion)
                 
                 # Calcular el tiempo transcurrido desde la última actualización
-                delta_time = current_time - self.prev_time
+                delta_time = (current_time - self.prev_time).nanoseconds / 1e9  # Convertir a segundos
                 
                 # Calcular la velocidad angular a partir de la diferencia de cuaterniones y el tiempo transcurrido
                 angular_velocity = self.quaternion_to_angular_velocity(diff_quaternion, delta_time)
@@ -98,14 +100,14 @@ class OdomTransformer(Node):
                 
             # Crear mensaje de odometría
             odom = Odometry()
-            odom.header.stamp = current_time.to_msg()  # Usar current_time en lugar de self.get_clock().now()
-            odom.header.frame_id = "world"
+            odom.header.stamp = current_time.to_msg()
+            odom.header.frame_id = "odom_frame"
             odom.child_frame_id = "base_link"
 
             # Rellenar la orientación y la posición
-         
-            current_quaternion = self.quaternion
-            odom.pose.pose.orientation = self.rotate_quaternion_by_90_degrees(current_quaternion)
+            #current_quaternion = self.quaternion
+            #odom.pose.pose.orientation = self.rotate_quaternion_by_90_degrees(current_quaternion)
+            odom.pose.pose.orientation = self.quaternion
             odom.pose.pose.position = Point(x=self.position.x, y=self.position.y, z=self.position.z)
 
             # Crear un nuevo objeto Twist y asignar los valores de velocidad lineal y angular
@@ -121,6 +123,18 @@ class OdomTransformer(Node):
             # Publicar el mensaje de odometría
             self.odom_publisher.publish(odom)
             self.get_logger().info('Publishing Odometry')
+
+            # Publicar la transformación TF
+            t = TransformStamped()
+            t.header.stamp = current_time.to_msg()
+            t.header.frame_id = "odom_frame"
+            t.child_frame_id = "base_link"
+            t.transform.translation.x = self.position.x
+            t.transform.translation.y = self.position.y
+            t.transform.translation.z = self.position.z
+            t.transform.rotation = odom.pose.pose.orientation
+
+            self.tf_broadcaster.sendTransform(t)
 
             # Actualizar el cuaternión y el tiempo previos para el siguiente cálculo
             self.prev_quaternion = self.quaternion
@@ -138,19 +152,8 @@ class OdomTransformer(Node):
 
     def quaternion_to_angular_velocity(self, diff_quaternion, delta_time):
         # Convierte la diferencia de cuaterniones en velocidad angular
-        # delta_time es el tiempo transcurrido desde la última actualización de cuaterniones
-        # diff_quaternion es el cuaternión que representa la diferencia entre dos cuaterniones sucesivos
-        # La fórmula de la velocidad angular se calcula como la mitad de la magnitud del vector diferencial dividido por el tiempo
-        
-        # Calcular la magnitud de la parte vectorial del cuaternión diferencial
         magnitude = math.sqrt(diff_quaternion.x**2 + diff_quaternion.y**2 + diff_quaternion.z**2)
-        
-        # Convertir el tiempo delta_time a segundos
-        delta_time_sec = delta_time.nanoseconds / 1e9
-        
-        # Calcular la velocidad angular como la mitad de la magnitud del vector diferencial dividido por el tiempo
-        angular_velocity = magnitude / delta_time_sec * 0.5
-        
+        angular_velocity = magnitude / delta_time * 0.5
         return angular_velocity
 
 

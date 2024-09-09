@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros2/Desktop/rosbostito/src/navigation_tb3
+CMAKE_SOURCE_DIR = /ros/src/navigation_tb3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros2/Desktop/rosbostito/build/navigation_tb3
+CMAKE_BINARY_DIR = /ros/build/navigation_tb3
 
 # Utility rule file for ament_cmake_python_symlink_navigation_tb3.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/compiler_depend
 include CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/progress.make
 
 CMakeFiles/ament_cmake_python_symlink_navigation_tb3:
-	/usr/bin/cmake -E create_symlink /home/ros2/Desktop/rosbostito/src/navigation_tb3/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_python/navigation_tb3/navigation_tb3
+	/usr/bin/cmake -E create_symlink /ros/src/navigation_tb3/navigation_tb3 /ros/build/navigation_tb3/ament_cmake_python/navigation_tb3/navigation_tb3
 
 ament_cmake_python_symlink_navigation_tb3: CMakeFiles/ament_cmake_python_symlink_navigation_tb3
 ament_cmake_python_symlink_navigation_tb3: CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/clean
 
 CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/depend:
-	cd /home/ros2/Desktop/rosbostito/build/navigation_tb3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros2/Desktop/rosbostito/src/navigation_tb3 /home/ros2/Desktop/rosbostito/src/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3/CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /ros/build/navigation_tb3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros/src/navigation_tb3 /ros/src/navigation_tb3 /ros/build/navigation_tb3 /ros/build/navigation_tb3 /ros/build/navigation_tb3/CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_symlink_navigation_tb3.dir/depend
 

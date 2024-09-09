@@ -1,8 +1,8 @@
-# Install script for directory: /home/ros2/Desktop/rosbostito/src/navigation_tb3
+# Install script for directory: /ros/src/navigation_tb3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ros2/Desktop/rosbostito/install/navigation_tb3")
+  set(CMAKE_INSTALL_PREFIX "/ros/install/navigation_tb3")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/ros/build/navigation_tb3/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/ros2/Desktop/rosbostito/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3"
+        "/ros/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3"
       )
 endif()
 
@@ -62,5 +62,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ros2/Desktop/rosbostito/build/navigation_tb3/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/ros/build/navigation_tb3/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

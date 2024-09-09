@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros2/Desktop/rosbostito/src/navigation_tb3
+CMAKE_SOURCE_DIR = /ros/src/navigation_tb3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros2/Desktop/rosbostito/build/navigation_tb3
+CMAKE_BINARY_DIR = /ros/build/navigation_tb3
 
 # Utility rule file for ament_cmake_python_build_navigation_tb3_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/compiler_depe
 include CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_navigation_tb3_egg:
-	cd /home/ros2/Desktop/rosbostito/build/navigation_tb3/ament_cmake_python/navigation_tb3 && /usr/bin/python3 setup.py egg_info
+	cd /ros/build/navigation_tb3/ament_cmake_python/navigation_tb3 && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_navigation_tb3_egg: CMakeFiles/ament_cmake_python_build_navigation_tb3_egg
 ament_cmake_python_build_navigation_tb3_egg: CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/depend:
-	cd /home/ros2/Desktop/rosbostito/build/navigation_tb3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros2/Desktop/rosbostito/src/navigation_tb3 /home/ros2/Desktop/rosbostito/src/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3 /home/ros2/Desktop/rosbostito/build/navigation_tb3/CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /ros/build/navigation_tb3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /ros/src/navigation_tb3 /ros/src/navigation_tb3 /ros/build/navigation_tb3 /ros/build/navigation_tb3 /ros/build/navigation_tb3/CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_navigation_tb3_egg.dir/depend
 

@@ -1,1 +1,1 @@
-/home/ros2/Desktop/rosbostito/src/navigation_tb3/launch/navigation.launch.py
+/ros/src/navigation_tb3/launch/navigation.launch.py

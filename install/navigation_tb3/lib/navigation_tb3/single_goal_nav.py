@@ -1,1 +1,1 @@
-/home/ros2/Desktop/rosbostito/src/navigation_tb3/scripts/single_goal_nav.py
+/ros/src/navigation_tb3/scripts/single_goal_nav.py
