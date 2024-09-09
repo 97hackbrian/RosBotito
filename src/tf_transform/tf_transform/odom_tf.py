@@ -101,7 +101,7 @@ class OdomTransformer(Node):
             # Crear mensaje de odometría
             odom = Odometry()
             odom.header.stamp = current_time.to_msg()
-            odom.header.frame_id = "odom_frame"
+            odom.header.frame_id = "odom"
             odom.child_frame_id = "base_link"
 
             # Rellenar la orientación y la posición
@@ -127,7 +127,7 @@ class OdomTransformer(Node):
             # Publicar la transformación TF
             t = TransformStamped()
             t.header.stamp = current_time.to_msg()
-            t.header.frame_id = "odom_frame"
+            t.header.frame_id = "odom"
             t.child_frame_id = "base_link"
             t.transform.translation.x = self.position.x
             t.transform.translation.y = self.position.y

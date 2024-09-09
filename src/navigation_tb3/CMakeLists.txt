@@ -36,4 +36,10 @@ install(PROGRAMS scripts/single_goal_nav.py
         install(PROGRAMS scripts/multi_waypoints.py
         DESTINATION lib/${PROJECT_NAME})
 
+        install(  
+  DIRECTORY meshes  
+  DESTINATION share/${PROJECT\_NAME}  
+)  
+
+
 ament_package()
