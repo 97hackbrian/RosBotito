@@ -1,0 +1,7 @@
+# Ignorar carpetas build, install y log
+build/
+install/
+log/
+
+# Ignorar archivos .so
+*.so
