@@ -9,13 +9,13 @@ amcl:
     base_frame_id: "base_link"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
-    beam_skip_threshold: 0.3
+    beam_skip_threshold: 0.8
     do_beamskip: false
     global_frame_id: "map"
     lambda_short: 0.1
     laser_likelihood_max_dist: 2.0
     laser_max_range: 11.0
-    laser_min_range: -1.0
+    laser_min_range: 0.2
     laser_model_type: "likelihood_field"
     max_beams: 90
     max_particles: 5000
@@ -28,7 +28,7 @@ amcl:
     resample_interval: 1
     robot_model_type: "nav2_amcl::DifferentialMotionModel"
     save_pose_rate: 0.5
-    sigma_hit: 0.2
+    sigma_hit: 0.5
     tf_broadcast: true
     transform_tolerance: 1.0
     update_min_a: 0.2
@@ -111,7 +111,7 @@ controller_server:
     # Progress checker parameters
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.5
+      required_movement_radius: 0.1
       movement_time_allowance: 10.0
 
     general_goal_checker:
@@ -129,12 +129,12 @@ controller_server:
       max_vel_x: 0.4
       max_vel_y: 0.0
       max_vel_theta: 0.45
-      min_speed_xy: 0.0
-      max_speed_xy: 0.45
+      min_speed_xy: 0.1
+      max_speed_xy: 0.28
       min_speed_theta: 0.0
       # Add high threshold velocity for turtlebot 3 issue.
       # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
-      acc_lim_x: 0.5
+      acc_lim_x: 0.4
       acc_lim_y: 0.0
       acc_lim_theta: 0.2
       decel_lim_x: -0.2
@@ -179,19 +179,19 @@ local_costmap:
       width: 6
       height: 6
       resolution: 0.05
-      robot_radius: 0.15
+      robot_radius: 0.1
       plugins: ["obstacle_layer", "voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        inflation_radius: 0.5
-        cost_scaling_factor: 1.5
+        inflation_radius: 0.1
+        cost_scaling_factor: 0.2
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
         observation_sources: scan
         scan:
           topic: /scan
-          max_obstacle_height: 0.5
+          max_obstacle_height: 0.1
           clearing: True
           marking: True
           data_type: "LaserScan"
@@ -233,7 +233,7 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: True
-      robot_radius: 0.22
+      robot_radius: 0.1
       resolution: 0.05
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "voxel_layer", "inflation_layer"]
@@ -276,8 +276,8 @@ global_costmap:
         map_subscribe_transient_local: True
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 0.2
-        inflation_radius: 0.2
+        cost_scaling_factor: 0.1
+        inflation_radius: 0.1
       always_send_full_costmap: True
   global_costmap_client:
     ros__parameters:
