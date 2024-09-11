@@ -38,7 +38,7 @@ install(PROGRAMS scripts/single_goal_nav.py
 
         install(  
   DIRECTORY meshes  
-  DESTINATION share/${PROJECT\_NAME}  
+  DESTINATION share/${PROJECT_NAME}  
 )  
 
 

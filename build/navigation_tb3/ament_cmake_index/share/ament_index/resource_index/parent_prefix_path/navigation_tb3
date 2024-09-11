@@ -1,1 +1,1 @@
-/ros/install/tf_transform:/ros/install/moveMotor:/opt/ros/humble
+/ros/install/tf_transform:/ros/install/navigation_tb3:/ros/install/moveMotor:/ros/install/cartographer_rviz:/ros/install/cartographer_ros:/ros/install/cartographer_ros_msgs:/opt/ros/humble

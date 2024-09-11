@@ -1,8 +1,12 @@
 /ros/install/navigation_tb3/lib/navigation_tb3/pub_occupancy_grid
 /ros/install/navigation_tb3/share/navigation_tb3/launch/mapping.launch.py
 /ros/install/navigation_tb3/share/navigation_tb3/launch/navigation.launch.py
+/ros/install/navigation_tb3/share/navigation_tb3/config/casa2.pgm
+/ros/install/navigation_tb3/share/navigation_tb3/config/casa2.yaml
 /ros/install/navigation_tb3/share/navigation_tb3/config/cuarto.pgm
 /ros/install/navigation_tb3/share/navigation_tb3/config/cuarto.yaml
+/ros/install/navigation_tb3/share/navigation_tb3/config/cuarto2.pgm
+/ros/install/navigation_tb3/share/navigation_tb3/config/cuarto2.yaml
 /ros/install/navigation_tb3/share/navigation_tb3/config/map2.pgm
 /ros/install/navigation_tb3/share/navigation_tb3/config/map2.yaml
 /ros/install/navigation_tb3/share/navigation_tb3/config/mapCasa3.pgm
@@ -25,6 +29,7 @@
 /ros/install/navigation_tb3/local/lib/python3.10/dist-packages/navigation_tb3/__init__.py
 /ros/install/navigation_tb3/lib/navigation_tb3/single_goal_nav.py
 /ros/install/navigation_tb3/lib/navigation_tb3/multi_waypoints.py
+/ros/install/navigation_tb3/share/navigation_tb3/meshes/base_link.STL
 /ros/install/navigation_tb3/share/ament_index/resource_index/package_run_dependencies/navigation_tb3
 /ros/install/navigation_tb3/share/ament_index/resource_index/parent_prefix_path/navigation_tb3
 /ros/install/navigation_tb3/share/navigation_tb3/environment/ament_prefix_path.sh

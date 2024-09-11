@@ -337,6 +337,9 @@ ament_cmake_symlink_install_programs("/ros/src/navigation_tb3" PROGRAMS "scripts
 # install(PROGRAMS "scripts/multi_waypoints.py" "DESTINATION" "lib/navigation_tb3")
 ament_cmake_symlink_install_programs("/ros/src/navigation_tb3" PROGRAMS "scripts/multi_waypoints.py" "DESTINATION" "lib/navigation_tb3")
 
+# install(DIRECTORY "meshes" "DESTINATION" "share/navigation_tb3")
+ament_cmake_symlink_install_directory("/ros/src/navigation_tb3" DIRECTORY "meshes" "DESTINATION" "share/navigation_tb3")
+
 # install(FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/ros/src/navigation_tb3" FILES "/ros/build/navigation_tb3/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/navigation_tb3" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
