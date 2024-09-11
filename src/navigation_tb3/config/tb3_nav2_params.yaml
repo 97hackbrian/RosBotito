@@ -124,9 +124,9 @@ controller_server:
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
       debug_trajectory_details: True
-      min_vel_x: 0.0
+      min_vel_x: 0.1
       min_vel_y: 0.0
-      max_vel_x: 0.35
+      max_vel_x: 0.4
       max_vel_y: 0.0
       max_vel_theta: 0.45
       min_speed_xy: 0.0
@@ -136,10 +136,10 @@ controller_server:
       # https://github.com/ROBOTIS-GIT/turtlebot3_simulations/issues/75
       acc_lim_x: 0.5
       acc_lim_y: 0.0
-      acc_lim_theta: 0.6
-      decel_lim_x: -0.5
+      acc_lim_theta: 0.2
+      decel_lim_x: -0.2
       decel_lim_y: 0.0
-      decel_lim_theta: -0.5
+      decel_lim_theta: -0.2
       vx_samples: 20
       vy_samples: 0
       vtheta_samples: 40
@@ -148,7 +148,7 @@ controller_server:
       angular_granularity: 0.025
       transform_tolerance: 0.2
       xy_goal_tolerance: 0.05
-      trans_stopped_velocity: 0.25
+      trans_stopped_velocity: 0.1
       short_circuit_trajectory_evaluation: True
       stateful: True
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
@@ -184,7 +184,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         inflation_radius: 0.5
-        cost_scaling_factor: 2.0
+        cost_scaling_factor: 1.5
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
@@ -331,9 +331,9 @@ recoveries_server:
     transform_timeout: 0.1
     use_sim_time: true
     simulate_ahead_time: 2.0
-    max_rotational_vel: 0.6
-    min_rotational_vel: 0.5
-    rotational_acc_lim: 1.2
+    max_rotational_vel: 0.3
+    min_rotational_vel: 0.3
+    rotational_acc_lim: 0.5
 
 robot_state_publisher:
   ros__parameters:
