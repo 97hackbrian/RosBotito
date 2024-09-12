@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'Publish=tf_transform.Publisher_main:main'
+            'Publish=tf_transform.Publisher_main:main',
+            'OdomRead=tf_transform.odom_tf:main',
         ],
     },
 )

@@ -24,7 +24,7 @@ class DataPublisher(Node):
         self.velocity_publisher = self.create_publisher(Vector3, 'velocity_topic', 10)
         
         # Configurar temporizador para publicar datos a intervalos regulares
-        self.timer = self.create_timer(0.05, self.publish_data)  # Publicar a 10 Hz
+        self.timer = self.create_timer(0.1, self.publish_data)  # Publicar a 10 Hz
         
     def euler_to_quaternion(self, yaw, roll, pitch):
         cy = math.cos(yaw * 0.5)
@@ -93,9 +93,9 @@ class DataPublisher(Node):
             self.quaternion_publisher.publish(quaternion)
             self.velocity_publisher.publish(velocity)
             
-            self.get_logger().info(f'Publishing Vector3: x={vector.x}, y={vector.y}, z={vector.z}')
-            self.get_logger().info(f'Publishing Quaternion: x={quaternion.x}, y={quaternion.y}, z={quaternion.z}, w={quaternion.w}')
-            self.get_logger().info(f'Publishing Velocity: x={velocity.x}, y={velocity.y}, z={velocity.z}')
+            #self.get_logger().info(f'Publishing Vector3: x={vector.x}, y={vector.y}, z={vector.z}')
+            #self.get_logger().info(f'Publishing Quaternion: x={quaternion.x}, y={quaternion.y}, z={quaternion.z}, w={quaternion.w}')
+            #self.get_logger().info(f'Publishing Velocity: x={velocity.x}, y={velocity.y}, z={velocity.z}')
 
     def __del__(self):
         self.pipe.stop()
